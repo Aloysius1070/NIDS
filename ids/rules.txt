@@ -1,0 +1,13 @@
+alert udp 2001 any -> any 56 IP Option Router Alert
+alert udp any any -> any 53 DNS ALERT
+alert udp any 53 -> any any SSDP ALERT
+alert udp 4860 34 -> any any DNS ALERT
+alert udp any any -> any 1900 SSDP ALERT
+alert udp any 1900 -> any 53 SSDP ALERT 
+alert tcp any 61036 -> any https SSDP ALERT
+alert udp any 63 -> any any SSDP ALERT 
+alert udp any 68 -> any any SSDP ALERT 
+alert udp any any -> any 53 DNS DNS DNS
+alert udp any 53 -> any any DNS DNS DNS
+alert udp any any -> any any Aloysius
+
